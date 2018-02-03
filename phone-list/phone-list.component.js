@@ -1,16 +1,8 @@
 // Register `phoneList` component, along with its associated controller and template
-angular.
-module('phonecatApp').
-component('phoneList', {
-  template:
-    '<p>Hi there {{phonelist.username}}</p>' +
-    '<p>Total number of phones: {{phonelist.phones.length}}</p>' +
-    '<ul>' +
-    '<li ng-repeat="phone in phonelist.phones">' +
-    '<span>{{phone.name}}</span>' +
-    '<p>{{phone.snippet}}</p>' +
-    '</li>' +
-    '</ul>',
+angular
+.module('phoneList', [])
+.component('phoneList', {
+  templateUrl:'phone-list/phone-list.template.html',
   controller: PhoneListControllerLesson3,
   controllerAs: 'phonelist'
 });
@@ -27,4 +19,4 @@ function PhoneListControllerLesson3() {
     snippet: 'The Next, Next Generation tablet.'
   }];
   this.username = "Max Soe"
-}
+};
