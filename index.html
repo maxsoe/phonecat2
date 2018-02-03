@@ -1,0 +1,76 @@
+<html lang="en" ng-app="myApp" >
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phone catalog 2</title>
+
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <!-- Roboto font -->
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,700'>
+  <!-- Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Custom CSS for app -->
+  <!-- <link rel="stylesheet" href="app.css" /> -->
+
+</head>
+
+<body>
+
+  <md-toolbar>
+    <h1 class="md-display-3">My app</h1>
+  </md-toolbar>
+
+  <div layout="column" flex  ng-controller="PhoneListControllerLesson2">
+    <h2>Lesson 2 - AngularJS templates</h2>
+    <p>Hello {{username}}</p>
+    <p>Total number of phones in the catalog: {{phones.length}}</p>
+    <ul>
+      <li ng-repeat="phone in phones">
+        <span>{{phone.name}}</span>
+        <p>{{phone.snippet}}</p>
+      </li>
+    </ul>
+
+    <table>
+      <tr>
+        <th>Row number</th>
+      </tr>
+      <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]">
+        <td>{{i+1}}</td>
+      </tr>
+    </table>
+  </div>
+  <div layout="column" flex>
+    <h2>Lesson 3 - Components</h2>
+    <phone-list></phone-list>
+  </div>
+
+
+
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-messages.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-resource.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+  <!-- Application bootstrap  -->
+  <script src="app.js"></script>
+
+  <!-- Component: phoneList -->
+  <script src="phone-list.component.js"></script>
+
+  <!-- Component: userList -->
+  <!-- <script src="user-list/user-list.module.js"></script> -->
+  <!-- <script src="user-list/user-list.component.js"></script>
+  <script src="user-detail/user-detail.component.js"></script> -->
+
+</body>
+
+</html>
