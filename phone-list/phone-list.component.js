@@ -32,7 +32,8 @@ function PhoneListControllerLesson7(getPhoneList) {
     // console.log(this.phones);
 
     angular.forEach(this.phones, function(phone, index) {
-      console.log(index + ": " + phone.name + ": " + phone.age);
+      // console.log(index + ": " + phone.name + ": " + phone.age);
+
       // Add a new property to each object
       phone.newProperty = phone.id;
     });
