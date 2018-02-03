@@ -28,7 +28,25 @@ function PhoneListControllerLesson3() {
 function PhoneListControllerLesson7(getPhoneList) {
   getPhoneList.getPosts().then(response => {
     this.phones = response.data;
+
+    // console.log(this.phones);
+
+    angular.forEach(this.phones, function(phone, index) {
+      console.log(index + ": " + phone.name + ": " + phone.age);
+      // Add a new property to each object
+      phone.newProperty = phone.id;
+    });
+
   });
   this.username = "Max Soe";
   this.orderProp = 'age';
+
+
+  // for (i = 0; i < this.phones.length; i++){
+  //   console.log(i);
+  // };
+  //
+  // angular.forEach(this.phones, function(value, key) {
+  //   console.log(key + ": " + value.name + ": " + value.age);
+  // });
 };
