@@ -1,10 +1,10 @@
 // Register `phoneList` component, along with its associated controller and template
 angular
-  .module('phoneList', [])
+  .module('phoneList', ['getPhoneList'])
   .component('phoneList', {
     templateUrl: 'phone-list/phone-list.template.html',
-    controller: PhoneListControllerLesson3,
-    controllerAs: 'phonelist'
+    controller: PhoneListControllerLesson7,
+    controllerAs: 'phonelistCtrl'
   });
 
 function PhoneListControllerLesson3() {
@@ -21,6 +21,14 @@ function PhoneListControllerLesson3() {
     snippet: 'The Next, Next Generation tablet.',
     age: 3
   }];
+  this.username = "Max Soe";
+  this.orderProp = 'age';
+};
+
+function PhoneListControllerLesson7(getPhoneList) {
+  getPhoneList.getPosts().then(response => {
+    this.phones = response.data;
+  });
   this.username = "Max Soe";
   this.orderProp = 'age';
 };
