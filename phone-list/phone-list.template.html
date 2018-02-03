@@ -1,9 +1,17 @@
 <h2>Lesson 4 - HTML templates</h2>
 <p>Hi there {{phonelist.username}}</p>
 <p>Total number of phones: {{phonelist.phones.length}}</p>
+<p>Search: <input ng-model="$myctrl.query" /></p>
+<p>
+  Sort by:
+  <select ng-model="phonelist.orderProp">
+    <option value="name">Alphabetical</option>
+    <option value="age">Newest</option>
+  </select>
+  <p>currently ordered by {{phonelist.orderProp}}</p>
+</p>
 <ul>
-  Search: <input ng-model="$myctrl.query" />
-  <li ng-repeat="phone in phonelist.phones | filter:$myctrl.query">
+  <li ng-repeat="phone in phonelist.phones | filter:$myctrl.query | orderBy:phonelist.orderProp">
     <span>{{phone.name}}</span>
     <p>{{phone.snippet}}</p>
   </li>

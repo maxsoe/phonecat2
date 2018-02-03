@@ -5,7 +5,8 @@ var myAppVar = angular.module('phonecatApp', [
 ]);
 
 // Define the `PhoneListController` controller on the `phonecatApp` module
-myAppVar.controller('PhoneListControllerLesson2', function PhoneListControllerLesson2($scope) {
+myAppVar
+.controller('PhoneListControllerLesson2', function PhoneListControllerLesson2($scope) {
   $scope.phones = [{
     name: 'Nexus S',
     snippet: 'Fast just got faster with Nexus S.'
