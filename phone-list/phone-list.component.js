@@ -4,7 +4,7 @@ angular
   .component('phoneList', {
     templateUrl: 'phone-list/phone-list.template.html',
     controller: PhoneListControllerLesson7,
-    controllerAs: 'phonelistCtrl'
+    controllerAs: 'phoneListCtrl'
   });
 
 function PhoneListControllerLesson3() {
@@ -40,13 +40,4 @@ function PhoneListControllerLesson7(getPhoneList) {
   });
   this.username = "Max Soe";
   this.orderProp = 'age';
-
-
-  // for (i = 0; i < this.phones.length; i++){
-  //   console.log(i);
-  // };
-  //
-  // angular.forEach(this.phones, function(value, key) {
-  //   console.log(key + ": " + value.name + ": " + value.age);
-  // });
 };
