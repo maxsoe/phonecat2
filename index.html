@@ -1,6 +1,7 @@
 <html lang="en" ng-app="phonecatApp" >
 
 <head>
+  <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Phone catalog 2</title>
 
@@ -22,7 +23,7 @@
     <h1 class="md-display-3">My app</h1>
   </md-toolbar>
 
-  <div layout="column" flex  ng-controller="PhoneListControllerLesson2">
+  <!-- <div layout="column" flex  ng-controller="PhoneListControllerLesson2">
     <h2>Lesson 2 - AngularJS templates</h2>
     <p>Hello {{username}}</p>
     <p>Total number of phones in the catalog: {{phones.length}}</p>
@@ -44,6 +45,12 @@
   </div>
   <div layout="column" flex>
     <phone-list></phone-list>
+  </div> -->
+
+  <div layout="column" flex>
+    <h2>Lesson 9</h2>
+    <li><a ui-sref="phones">Phones</a></li>
+    <ui-view>Loading... </ui-view>
   </div>
 
 
@@ -61,6 +68,7 @@
 
   <!-- Application bootstrap  -->
   <script src="app.js"></script>
+  <script src="app.config.js"></script>
 
   <!-- Core services: getPhoneList -->
   <script src="core/get-phone-list.service.js"></script>
