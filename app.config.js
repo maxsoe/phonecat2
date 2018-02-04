@@ -1,13 +1,11 @@
 angular
 .module('phonecatApp')
 .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
-  $locationProvider.html5Mode(true);
   $urlRouterProvider.otherwise('/');
 
   var homeState = {
     name: 'home',
-    url: '/',
-    templateUrl: 'index.html'
+    url: '/'
   };
 
   var phonesListState = {
