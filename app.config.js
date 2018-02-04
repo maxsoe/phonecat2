@@ -14,20 +14,12 @@ angular
     template: '<phone-list></phone-list>'
   };
 
-// TODO: phone details state
-
   var phoneDetailState = {
-    name: 'posts.incomplete',
-    url: '/incomplete',
-    template: '<posts-list posts="vm.incompletePosts"></posts-list>'
-  };
+    name: 'phoneDetail',
+    url: '/phones/:phoneId',
+    template: '<phone-detail></phone-detail>'
+  }
 
-  var postsCompleteState = {
-    name: 'posts.complete',
-    url: '/complete',
-    template: '<posts-list posts="vm.completePosts"></posts-list>'
-  };
-  //
   $stateProvider
   .state(homeState)
   .state(phonesListState)

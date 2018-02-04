@@ -2,6 +2,7 @@
 var myAppVar = angular.module('phonecatApp', [
   // modules we depend on
   'phoneList',
+  'phoneDetail',
   'ui.router'
 ]);
 

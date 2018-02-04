@@ -1,6 +1,6 @@
 // Register `phoneList` component, along with its associated controller and template
 angular
-  .module('phoneList', ['getPhoneList'])
+  .module('phoneList', ['getPhoneListServ'])
   .component('phoneList', {
     templateUrl: 'phone-list/phone-list.template.html',
     controller: PhoneListControllerLesson7,
@@ -25,8 +25,8 @@ function PhoneListControllerLesson3() {
   this.orderProp = 'age';
 };
 
-function PhoneListControllerLesson7(getPhoneList) {
-  getPhoneList.getPosts().then(response => {
+function PhoneListControllerLesson7(getPhoneListServ) {
+  getPhoneListServ.getPosts().then(response => {
     this.phones = response.data;
 
     // console.log(this.phones);
