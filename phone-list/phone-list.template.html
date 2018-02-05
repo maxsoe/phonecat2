@@ -16,7 +16,8 @@
     <p>
       <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />
     </p>
-    <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
+    <!-- <a href="/#!/phones/{{phone.id}}">{{phone.name}}</a> -->
+    <a ui-sref="phoneDetail({phoneId: phone.id})">{{phone.name}}</a>
     <p>{{phone.snippet}}</p>
     <p>Age: {{phone.age}}</p>
   </li>
