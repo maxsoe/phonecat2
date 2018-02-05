@@ -1,6 +1,7 @@
 // Define the `phonecatApp` module
 var myAppVar = angular.module('phonecatApp', [
   // modules we depend on
+  'checkmark',
   'phoneList',
   'phoneDetail',
   'ui.router'
