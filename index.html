@@ -18,24 +18,12 @@
 
 <body>
 
-  <md-toolbar>
-    <h1 class="md-display-3">My app</h1>
-  </md-toolbar>
-  <md-toolbar class="md-hue-2">
+  <md-toolbar class="md-warn">
     <div class="md-toolbar-tools">
       <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true">
         <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
       </md-button>
-
-      <h2 flex="" md-truncate="">Toolbar with Disabled/Enabled Icon Buttons</h2>
-
-      <md-button class="md-icon-button" aria-label="Favorite">
-        <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
-      </md-button>
-
-      <md-button class="md-icon-button" aria-label="More">
-        <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
-      </md-button>
+      <h1 class="md-flex"><a ui-sref="home">PhoneCat 2</a></h1>
     </div>
   </md-toolbar>
 
@@ -69,8 +57,6 @@
     <ui-view>Loading... </ui-view>
   </div>
 
-
-
   <!-- Angular Material requires Angular.js Libraries -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-animate.min.js"></script>
@@ -86,7 +72,7 @@
   <script src="app.js"></script>
   <script src="app.config.js"></script>
 
-  <!-- Core services:checkmark -->
+  <!-- Core services: checkmark -->
   <script src="core/checkmark.filter.js"></script>
 
   <!-- Core services: getPhoneListServ -->
