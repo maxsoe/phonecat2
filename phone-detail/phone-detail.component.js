@@ -11,10 +11,15 @@ angular
 function PhoneDetailController($stateParams, getPhoneDetailServ) {
   this.phoneId = $stateParams.phoneId;
 
-  console.log("phoneId is " + this.phoneId);
+  // console.log("phoneId is " + this.phoneId);
+
+  this.setImage = function setImage(imageUrl) {
+    this.mainImageUrl = imageUrl;
+  };
 
   getPhoneDetailServ.getPosts(this.phoneId).then(response => {
     this.phone = response.data;
-    console.log(this.phone);
+    // console.log(this.phone);
+    this.setImage(this.phone.images[0]);
   });
 };
