@@ -37,82 +37,160 @@
   </div>
 </div>
 
-<div class="md-padding" layout-xs="column" layout="row">
-    <div flex-gt-xs>
-      <md-card>
-        <img ng-src="{{phoneListCtrl.phones[5].imageUrl}}" class="md-card-image" alt="Washed Out">
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">{{phoneListCtrl.phones[5].name}}</span>
-          </md-card-title-text>
-        </md-card-title>
+<!-- <div class="md-padding" layout-xs="column" layout="row">
+  <div flex-gt-xs>
+    <md-card>
+      <img ng-src="{{phoneListCtrl.phones[5].imageUrl}}" class="md-card-image" alt="Washed Out">
+      <md-card-title>
+        <md-card-title-text>
+          <span class="md-headline">{{phoneListCtrl.phones[5].name}}</span>
+        </md-card-title-text>
+      </md-card-title>
 
-        <md-card-content>
-          <p>
-            {{phoneListCtrl.phones[5].snippet}}
-          </p>
-        </md-card-content>
-      </md-card>
-      <md-card>
-        <md-card-header>
-          <md-card-avatar>
-            <img class="md-user-avatar" src="img/android_black.png"/>
-          </md-card-avatar>
-          <md-card-header-text>
-            <span class="md-title">User</span>
-            <span class="md-subhead">subhead</span>
-          </md-card-header-text>
-        </md-card-header>
-        <img ng-src="{{phoneListCtrl.phones[4].imageUrl}}" class="md-card-image" alt="Washed Out">
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">{{phoneListCtrl.phones[4].name}}</span>
-            <span class="md-subhead">Reversed</span>
-          </md-card-title-text>
-        </md-card-title>
+      <md-card-content>
+        <p>
+          {{phoneListCtrl.phones[5].snippet}}
+        </p>
+      </md-card-content>
+    </md-card>
+    <md-card>
+      <md-card-header>
+        <md-card-avatar>
+          <img class="md-user-avatar" src="img/android_black.png" />
+        </md-card-avatar>
+        <md-card-header-text>
+          <span class="md-title">User</span>
+          <span class="md-subhead">subhead</span>
+        </md-card-header-text>
+      </md-card-header>
+      <img ng-src="{{phoneListCtrl.phones[4].imageUrl}}" class="md-card-image" alt="Washed Out">
+      <md-card-title>
+        <md-card-title-text>
+          <span class="md-headline">{{phoneListCtrl.phones[4].name}}</span>
+          <span class="md-subhead">Reversed</span>
+        </md-card-title-text>
+      </md-card-title>
 
-        <md-card-content>
-          <p>
-            {{phoneListCtrl.phones[4].snippet}}
-          </p>
-        </md-card-content>
-      </md-card>
-    </div>
-    <div flex-gt-xs >
-      <md-card>
-        <md-card-header>
-          <md-card-avatar>
-            <md-icon class="md-avatar-icon" md-svg-icon="img/angular.svg"></md-icon>
-          </md-card-avatar>
-          <md-card-header-text>
-            <span class="md-title">Title</span>
-            <span class="md-subhead">subhead</span>
-          </md-card-header-text>
-        </md-card-header>
-        <img ng-src="{{phoneListCtrl.phones[2].imageUrl}}" class="md-card-image" alt="Washed Out">
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">{{phoneListCtrl.phones[2].name}}</span>
-            <span class="md-subhead">Description</span>
-          </md-card-title-text>
-        </md-card-title>
-        <md-card-actions layout="row" layout-align="start center">
-          <md-card-icon-actions>
-            <md-button class="md-icon-button" aria-label="Favorite">
-              <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
-            </md-button>
-            <md-button class="md-icon-button" aria-label="Share">
-              <md-icon md-svg-icon="img/icons/share.svg"></md-icon>
-            </md-button>
-          </md-card-icon-actions>
-          <md-button>Action 1</md-button>
-          <md-button>Action 2</md-button>
-        </md-card-actions>
-        <md-card-content>
-          <p>
-            {{phoneListCtrl.phones[2].snippet}}
-          </p>
-        </md-card-content>
-      </md-card>
-    </div>
+      <md-card-content>
+        <p>
+          {{phoneListCtrl.phones[4].snippet}}
+        </p>
+      </md-card-content>
+    </md-card>
   </div>
+  <div flex-gt-xs>
+    <md-card>
+      <md-card-header>
+        <md-card-avatar>
+          <md-icon class="md-avatar-icon" md-svg-icon="img/angular.svg"></md-icon>
+        </md-card-avatar>
+        <md-card-header-text>
+          <span class="md-title">Title</span>
+          <span class="md-subhead">subhead</span>
+        </md-card-header-text>
+      </md-card-header>
+      <img ng-src="{{phoneListCtrl.phones[2].imageUrl}}" class="md-card-image" alt="Washed Out">
+      <md-card-title>
+        <md-card-title-text>
+          <span class="md-headline">{{phoneListCtrl.phones[2].name}}</span>
+          <span class="md-subhead">Description</span>
+        </md-card-title-text>
+      </md-card-title>
+      <md-card-actions layout="row" layout-align="start center">
+        <md-card-icon-actions>
+          <md-button class="md-icon-button" aria-label="Favorite">
+            <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+          </md-button>
+          <md-button class="md-icon-button" aria-label="Share">
+            <md-icon md-svg-icon="img/icons/share.svg"></md-icon>
+          </md-button>
+        </md-card-icon-actions>
+        <md-button>Action 1</md-button>
+        <md-button>Action 2</md-button>
+      </md-card-actions>
+      <md-card-content>
+        <p>
+          {{phoneListCtrl.phones[2].snippet}}
+        </p>
+      </md-card-content>
+    </md-card>
+  </div>
+</div> -->
+
+
+<div class="md-padding" layout="column" layout-gt-xs="row" flex>
+
+  <md-card flex-gt-xs="33">
+    <img ng-src="{{phoneListCtrl.phones[5].imageUrl}}" class="md-card-image" alt="Washed Out">
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">{{phoneListCtrl.phones[5].name}}</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <p>
+        {{phoneListCtrl.phones[5].snippet}}
+      </p>
+    </md-card-content>
+  </md-card>
+
+  <md-card flex-gt-xs="33">
+    <md-card-header>
+      <md-card-avatar>
+        <img class="md-user-avatar" src="img/android_black.png" />
+      </md-card-avatar>
+      <md-card-header-text>
+        <span class="md-title">User</span>
+        <span class="md-subhead">subhead</span>
+      </md-card-header-text>
+    </md-card-header>
+    <img ng-src="{{phoneListCtrl.phones[4].imageUrl}}" class="md-card-image" alt="Washed Out">
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">{{phoneListCtrl.phones[4].name}}</span>
+        <span class="md-subhead">Reversed</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <p>
+        {{phoneListCtrl.phones[4].snippet}}
+      </p>
+    </md-card-content>
+  </md-card>
+
+  <md-card flex-gt-xs="33">
+    <md-card-header>
+      <md-card-avatar>
+        <md-icon class="md-avatar-icon" md-svg-icon="img/angular.svg"></md-icon>
+      </md-card-avatar>
+      <md-card-header-text>
+        <span class="md-title">Title</span>
+        <span class="md-subhead">subhead</span>
+      </md-card-header-text>
+    </md-card-header>
+    <img ng-src="{{phoneListCtrl.phones[2].imageUrl}}" class="md-card-image" alt="Washed Out">
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">{{phoneListCtrl.phones[2].name}}</span>
+        <span class="md-subhead">Description</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-actions layout="row" layout-align="start center">
+      <md-card-icon-actions>
+        <md-button class="md-icon-button" aria-label="Favorite">
+          <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+        </md-button>
+        <md-button class="md-icon-button" aria-label="Share">
+          <md-icon md-svg-icon="img/icons/share.svg"></md-icon>
+        </md-button>
+      </md-card-icon-actions>
+      <md-button>Action 1</md-button>
+      <md-button>Action 2</md-button>
+    </md-card-actions>
+    <md-card-content>
+      <p>
+        {{phoneListCtrl.phones[2].snippet}}
+      </p>
+    </md-card-content>
+  </md-card>
+</div>
