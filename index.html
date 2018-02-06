@@ -1,4 +1,4 @@
-<html lang="en" ng-app="phonecatApp" >
+<html lang="en" ng-app="phonecatApp">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,6 +20,23 @@
 
   <md-toolbar>
     <h1 class="md-display-3">My app</h1>
+  </md-toolbar>
+  <md-toolbar class="md-hue-2">
+    <div class="md-toolbar-tools">
+      <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true">
+        <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+      </md-button>
+
+      <h2 flex="" md-truncate="">Toolbar with Disabled/Enabled Icon Buttons</h2>
+
+      <md-button class="md-icon-button" aria-label="Favorite">
+        <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
+      </md-button>
+
+      <md-button class="md-icon-button" aria-label="More">
+        <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
+      </md-button>
+    </div>
   </md-toolbar>
 
   <!-- <div layout="column" flex  ng-controller="PhoneListControllerLesson2">
@@ -59,7 +76,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-animate.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-aria.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-messages.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-resource.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-resource.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
 
   <!-- Angular Material Library -->
@@ -71,7 +88,7 @@
 
   <!-- Core services:checkmark -->
   <script src="core/checkmark.filter.js"></script>
-  
+
   <!-- Core services: getPhoneListServ -->
   <script src="core/get-phone-list.service.js"></script>
 
