@@ -2,10 +2,10 @@ angular
   .module('phonecatApp')
   .config(function($mdThemingProvider) {
     $mdThemingProvider.theme('default')
-      .primaryPalette('blue')
-      .accentPalette('orange')
-      .warnPalette('light-green')
-      .backgroundPalette('deep-purple');
+      .primaryPalette('indigo')
+      .accentPalette('pink')
+      .warnPalette('orange')
+      .backgroundPalette('grey');
   })
   .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider.otherwise('/');
