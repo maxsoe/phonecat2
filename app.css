@@ -133,3 +133,4 @@ ul li:first-child {
   .layout-row>.flex-gt-md-25 {
     max-width: calc(25% - 1em);
   }
+}
